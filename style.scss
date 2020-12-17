@@ -1,8 +1,46 @@
 @import "_reset.scss";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
   background-color: $Violet;
   background-image: url("/images/bg-mobile.svg");
   background-repeat: no-repeat;
+
+  div.wrap {
+    width: 100%;
+    // margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  h1 {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.868);
+    font-size: 1.6em;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  p {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.868);
+    text-align: center;
+    font-size: 1.2em;
+    width: 80%;
+  }
+
+  //img
+  #mockup {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #logo {
+    height: 40%;
+    margin-top: 5vh;
+  }
 }

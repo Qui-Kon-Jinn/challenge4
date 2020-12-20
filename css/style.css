@@ -26,9 +26,13 @@ body div.wrap {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 2fr 1fr 2fr 1fr 1fr;
-      grid-template-rows: 1fr 2fr 1fr 2fr 1fr 1fr;
+  -ms-grid-rows: 1fr 3fr 1fr 2fr 10% 1fr;
+      grid-template-rows: 1fr 3fr 1fr 2fr 10% 1fr;
   row-gap: 10px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body h1 {
@@ -55,5 +59,12 @@ body #mockup {
 body #logo {
   height: 40%;
   margin-top: 5vh;
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+body #registerBtn {
+  color: white;
+  height: 50px;
 }
 /*# sourceMappingURL=style.css.map */

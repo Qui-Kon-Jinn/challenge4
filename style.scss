@@ -13,8 +13,11 @@ body {
     // margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 2fr 10% 1fr;
     row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+
   }
 
   h1 {
@@ -42,5 +45,11 @@ body {
   #logo {
     height: 40%;
     margin-top: 5vh;
+    justify-self: left;
+  }
+
+  #registerBtn {
+    color: white;
+    height: 50px;
   }
 }

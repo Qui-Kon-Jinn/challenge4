@@ -18,16 +18,18 @@ body {
   background-color: #674baf;
   background-image: url("/images/bg-mobile.svg");
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 body div.wrap {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 3fr 1fr 2fr 10% 1fr;
-      grid-template-rows: 1fr 3fr 1fr 2fr 10% 1fr;
+  -ms-grid-rows: 200px 1fr 0.5fr 0.5fr 10% 1fr;
+      grid-template-rows: 200px 1fr 0.5fr 0.5fr 10% 1fr;
   row-gap: 10px;
   justify-items: center;
   -webkit-box-align: center;
@@ -38,33 +40,40 @@ body div.wrap {
 body h1 {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   color: rgba(255, 255, 255, 0.868);
-  font-size: 1.6em;
+  font-size: 2em;
   text-align: center;
   line-height: 1.5;
+  margin: 0 auto;
 }
 
 body p {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: rgba(255, 255, 255, 0.868);
   text-align: center;
-  font-size: 1.2em;
-  width: 80%;
+  font-size: 1.5em;
+  width: 100%;
+  margin: 0 auto;
 }
 
 body #mockup {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
 body #logo {
-  height: 40%;
+  height: 25%;
   margin-top: 5vh;
+  margin-bottom: 2vh;
   -ms-grid-column-align: left;
       justify-self: left;
 }
 
 body #registerBtn {
-  color: white;
-  height: 50px;
+  color: #674baf;
+  margin-top: 5%;
+  height: 40px;
+  width: 200px;
+  border-radius: 25px;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

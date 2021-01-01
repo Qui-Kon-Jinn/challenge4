@@ -22,14 +22,14 @@ body {
 }
 
 body div.wrap {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 200px 1fr 0.5fr 0.5fr 10% 1fr;
-      grid-template-rows: 200px 1fr 0.5fr 0.5fr 10% 1fr;
+  -ms-grid-rows: 150px 1fr 0.5fr 0.5fr 10% 0.5fr;
+      grid-template-rows: 150px 1fr 0.5fr 0.5fr 10% 0.5fr;
   row-gap: 10px;
   justify-items: center;
   -webkit-box-align: center;
@@ -40,7 +40,7 @@ body div.wrap {
 body h1 {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   color: rgba(255, 255, 255, 0.868);
-  font-size: 2em;
+  font-size: 1.6em;
   text-align: center;
   line-height: 1.5;
   margin: 0 auto;
@@ -50,19 +50,18 @@ body p {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: rgba(255, 255, 255, 0.868);
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
   width: 100%;
   margin: 0 auto;
 }
 
 body #mockup {
   width: 100%;
-  margin: 0 auto;
+  margin: 2vh auto;
 }
 
 body #logo {
   height: 25%;
-  margin-top: 5vh;
   margin-bottom: 2vh;
   -ms-grid-column-align: left;
       justify-self: left;
@@ -75,5 +74,24 @@ body #registerBtn {
   width: 200px;
   border-radius: 25px;
   background-color: #fff;
+}
+
+body div.socials {
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body i {
+  padding: 10px;
+  margin: 0 2%;
+  width: 20px;
+  height: 20px;
+  font-size: 120%;
+  border: 2px solid white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 400%;
 }
 /*# sourceMappingURL=style.css.map */

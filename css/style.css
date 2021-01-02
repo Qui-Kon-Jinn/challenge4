@@ -156,6 +156,7 @@ body i {
     -ms-grid-column-align: start;
         justify-self: start;
     margin-bottom: 40%;
+    font-size: 1em;
   }
   body #registerBtn:hover {
     background-color: #e882e8;

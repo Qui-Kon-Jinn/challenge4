@@ -86,62 +86,90 @@ body {
 // desktop design
 @media (min-width: 760px) {
   body {
-
     background-color: $Violet;
     background-image: url("/images/bg-desktop.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
     background-position-x: 50%;
 
 
 
     div.wrap {
-      width: 90%;
+      width: 95%;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 150px 1fr 1fr;
-      grid-template-rows: 120px 1fr 5vh;
+      grid-template-columns: 110px 1fr 1fr;
+      grid-template-rows: 120px auto auto;
       row-gap: 10px;
-      justify-items: center;
-      align-items: center;
+      column-gap: 20px;
+      justify-items: end;
+    }
 
+    h1,
+    p,
+    #registerBtn {
+      grid-row: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column: 3;
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+
+    h1,
+    p {
+      width: 100%;
     }
 
     h1 {
       font-size: 1.6em;
-      text-align: center;
       line-height: inherit;
       margin: 0 auto;
-      grid-row-start: 2;
-      grid-row-end: 3;
-      grid-column-start: 3;
-      grid-column-end: 4;
-
+      margin-top: 10%;
+      align-self: start;
+      text-align: left;
     }
 
     p {
-      font-family: "Open Sans", Arial, Helvetica, sans-serif;
-      color: rgba(255, 255, 255, 0.868);
-      text-align: center;
-      font-size: 1.2em;
-      width: 100%;
-      margin: 0 auto;
+      text-align: left;
+      margin-bottom: 25%;
+      // align-self: left;
+      // justify-self: start;
+      // justify-content: left;
+    }
+
+    #registerBtn {
+      align-self: end;
+      justify-self: start;
+      margin-bottom: 40%;
     }
 
     //img
     #mockup {
       width: 100%;
+      grid-row: 2;
       grid-row-start: 2;
       grid-row-end: 3;
+      grid-column: 1;
       grid-column-start: 1;
       grid-column-end: 3;
+
     }
 
     #logo {
       height: 40%;
+      grid-column: 1;
       grid-column-start: 1;
       grid-column-end: 4;
 
+    }
+
+    div.socials {
+      grid-row: 1;
+      grid-row-start: 3;
+      grid-column: 1;
+      grid-column-start: 3;
+      text-align: right;
     }
   }
 }

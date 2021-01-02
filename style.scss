@@ -91,15 +91,17 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     background-position-x: 50%;
+    height: 100vh;
 
 
 
     div.wrap {
       width: 95%;
+      height: 100%;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 110px 1fr 1fr;
-      grid-template-rows: 120px auto auto;
+      grid-template-columns: 100px 1fr 1fr;
+      grid-template-rows: 100px auto auto;
       row-gap: 10px;
       column-gap: 20px;
       justify-items: end;
@@ -144,6 +146,11 @@ body {
       margin-bottom: 40%;
     }
 
+    #registerBtn:hover {
+      background-color: $softMagenta;
+      color: white;
+    }
+
     //img
     #mockup {
       width: 100%;
@@ -165,11 +172,17 @@ body {
     }
 
     div.socials {
+      margin-bottom: 25px;
       grid-row: 1;
       grid-row-start: 3;
       grid-column: 1;
       grid-column-start: 3;
       text-align: right;
+    }
+
+    div.socials i:hover {
+      color: $softMagenta;
+      border-color: $softMagenta;
     }
   }
 }

@@ -102,16 +102,18 @@ body i {
     background-repeat: no-repeat;
     background-size: auto;
     background-position-x: 50%;
+    height: 100vh;
   }
   body div.wrap {
     width: 95%;
+    height: 100%;
     margin: 0 auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 110px 1fr 1fr;
-        grid-template-columns: 110px 1fr 1fr;
-    -ms-grid-rows: 120px auto auto;
-        grid-template-rows: 120px auto auto;
+    -ms-grid-columns: 100px 1fr 1fr;
+        grid-template-columns: 100px 1fr 1fr;
+    -ms-grid-rows: 100px auto auto;
+        grid-template-rows: 100px auto auto;
     row-gap: 10px;
     -webkit-column-gap: 20px;
             column-gap: 20px;
@@ -155,6 +157,10 @@ body i {
         justify-self: start;
     margin-bottom: 40%;
   }
+  body #registerBtn:hover {
+    background-color: #e882e8;
+    color: white;
+  }
   body #mockup {
     width: 100%;
     -ms-grid-row: 2;
@@ -174,6 +180,7 @@ body i {
     grid-column-end: 4;
   }
   body div.socials {
+    margin-bottom: 25px;
     -ms-grid-row: 1;
     grid-row: 1;
     -ms-grid-row: 3;
@@ -183,6 +190,10 @@ body i {
     -ms-grid-column: 3;
         grid-column-start: 3;
     text-align: right;
+  }
+  body div.socials i:hover {
+    color: #e882e8;
+    border-color: #e882e8;
   }
 }
 /*# sourceMappingURL=style.css.map */
